@@ -1,8 +1,8 @@
 module.exports = {
   // ethereum mainnet
   ethereum: {
-    MTON: "",
-    MTONMigrator: ""
+    MTON: "0xe3a87a9343d262f5f11280058ae807b45aa34669",
+    MTONMigrator: "0x057d8a97ec910d57d8cacbc48ea314b6eb3dc289"
   },
   // development network
   development: {
