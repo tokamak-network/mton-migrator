@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Onther-Tech/mton-migrator/static/css/main.dc0a14bb.chunk.css",
-    "main.js": "/Onther-Tech/mton-migrator/static/js/main.887a4f9c.chunk.js",
-    "main.js.map": "/Onther-Tech/mton-migrator/static/js/main.887a4f9c.chunk.js.map",
-    "runtime-main.js": "/Onther-Tech/mton-migrator/static/js/runtime-main.e0b947a8.js",
-    "runtime-main.js.map": "/Onther-Tech/mton-migrator/static/js/runtime-main.e0b947a8.js.map",
-    "static/js/2.9265b699.chunk.js": "/Onther-Tech/mton-migrator/static/js/2.9265b699.chunk.js",
-    "static/js/2.9265b699.chunk.js.map": "/Onther-Tech/mton-migrator/static/js/2.9265b699.chunk.js.map",
-    "index.html": "/Onther-Tech/mton-migrator/index.html",
-    "precache-manifest.4d8a062850c6e67158dde7664ebebb9f.js": "/Onther-Tech/mton-migrator/precache-manifest.4d8a062850c6e67158dde7664ebebb9f.js",
-    "service-worker.js": "/Onther-Tech/mton-migrator/service-worker.js",
-    "static/css/main.dc0a14bb.chunk.css.map": "/Onther-Tech/mton-migrator/static/css/main.dc0a14bb.chunk.css.map",
-    "static/js/2.9265b699.chunk.js.LICENSE.txt": "/Onther-Tech/mton-migrator/static/js/2.9265b699.chunk.js.LICENSE.txt"
+    "main.css": "/mton-migrator/static/css/main.dc0a14bb.chunk.css",
+    "main.js": "/mton-migrator/static/js/main.c9da2ffb.chunk.js",
+    "main.js.map": "/mton-migrator/static/js/main.c9da2ffb.chunk.js.map",
+    "runtime-main.js": "/mton-migrator/static/js/runtime-main.c104db3a.js",
+    "runtime-main.js.map": "/mton-migrator/static/js/runtime-main.c104db3a.js.map",
+    "static/js/2.ae3858b8.chunk.js": "/mton-migrator/static/js/2.ae3858b8.chunk.js",
+    "static/js/2.ae3858b8.chunk.js.map": "/mton-migrator/static/js/2.ae3858b8.chunk.js.map",
+    "index.html": "/mton-migrator/index.html",
+    "precache-manifest.6dd399f66bf3c87c85692dc6e4efba7f.js": "/mton-migrator/precache-manifest.6dd399f66bf3c87c85692dc6e4efba7f.js",
+    "service-worker.js": "/mton-migrator/service-worker.js",
+    "static/css/main.dc0a14bb.chunk.css.map": "/mton-migrator/static/css/main.dc0a14bb.chunk.css.map",
+    "static/js/2.ae3858b8.chunk.js.LICENSE.txt": "/mton-migrator/static/js/2.ae3858b8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0b947a8.js",
-    "static/js/2.9265b699.chunk.js",
+    "static/js/runtime-main.c104db3a.js",
+    "static/js/2.ae3858b8.chunk.js",
     "static/css/main.dc0a14bb.chunk.css",
-    "static/js/main.887a4f9c.chunk.js"
+    "static/js/main.c9da2ffb.chunk.js"
   ]
 }
