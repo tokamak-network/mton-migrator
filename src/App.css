@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  width: 200px;
+  height: 50px;
+  text-size-adjust: auto;
+  font-size: medium;
+}
+
+.left {
+  text-align: left;
+}
+
+a {
+  color: #61dafb;
+}

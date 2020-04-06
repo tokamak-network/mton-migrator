@@ -32,8 +32,8 @@ export const networkName = (netId) => {
     case 2:
       return 'Ropsten testnet';
     case 16:
-      return 'Plasma EVM Faraday testnet';
+      return 'Plasma EVM Faraday Testnet';
     default:
-      return `Private network (id=${netId})`;
+      return `Private Network (id=${netId})`;
   }
 }

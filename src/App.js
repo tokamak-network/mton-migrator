@@ -11,6 +11,7 @@ import {fetchAccounts, fetchNetwork, networkName } from "./services/Web3Service"
 
 import './App.css';
 
+const prefix = "https://etherscan.io/address";
 
 const _MTON = createCurrency('MTON');
 
@@ -22,6 +23,15 @@ const addressSelector = (netId) => {
       return addresses['development'];
   }
 }
+
+
+const Address = ({ children }) => {
+  return (
+    <a href={`${prefix}/${children}`}>
+      {children}
+    </a>
+  )
+};
 
 class App extends Component {
   state = {
@@ -133,17 +143,24 @@ class App extends Component {
     } = this.state;
 
     const from = accounts[0];
+    const claimable = migratorBalance !== '0' && !tx;
 
     return (
       <div>
         <p>
           Using {networkName(netId)}
           <br />
-          Logged in as {from}
+        </p>
+
+        <p className="left">
+          Logged in as <Address>{from}</Address>
           <br />
-          MTON deployed at {mton._address}
+        </p>
+
+        <p className="left">
+          MTON deployed at <Address>{mton._address}</Address>
           <br />
-          MTONMigrator deployed at {migrator._address}
+          MTONMigrator deployed at <Address>{migrator._address}</Address>
         </p>
 
         <br />
@@ -161,9 +178,15 @@ class App extends Component {
           </p>
         }
 
-        <button onClick={this.claimAll}>
-          claim MTON
-        </button>
+
+        {
+          claimable &&
+            <button onClick={this.claimAll}>
+            claim MTON
+          </button>
+        }
+
+
       </div>
     );
   }
