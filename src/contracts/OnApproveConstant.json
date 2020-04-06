@@ -1,0 +1,356 @@
+{
+  "contractName": "OnApproveConstant",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "INTERFACE_ID_ON_APPROVE",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"INTERFACE_ID_ON_APPROVE\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/tokens/OnApproveConstant.sol\":\"OnApproveConstant\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/tokens/OnApproveConstant.sol\":{\"keccak256\":\"0xd9cf91173fb575b54ed54874ec055168b7be861210893fcdc66c87f766e57ba8\",\"urls\":[\"bzz-raw://4f0f91bd9143cc52bbddbb2e23be9fcb8157fdae88675016b1c401a1486aa8d6\",\"dweb:/ipfs/Qma4BHMycMgnXLNP6YAZvwziHVCcDJi6zgbwcLsp89b8zT\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060c78061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80636cd28f9a14602d575b600080fd5b60336050565b604080516001600160e01b03199092168252519081900360200190f35b604051806028606b8239602801905060405180910390208156fe6f6e417070726f766528616464726573732c616464726573732c75696e743235362c627974657329a265627a7a7231582000efe5a4157e0569623060cccdadc3c133584b004401d998e5144b4632e89a2364736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80636cd28f9a14602d575b600080fd5b60336050565b604080516001600160e01b03199092168252519081900360200190f35b604051806028606b8239602801905060405180910390208156fe6f6e417070726f766528616464726573732c616464726573732c75696e743235362c627974657329a265627a7a7231582000efe5a4157e0569623060cccdadc3c133584b004401d998e5144b4632e89a2364736f6c634300050c0032",
+  "sourceMap": "27:144:38:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:144:38;;;;;;;",
+  "deployedSourceMap": "27:144:38:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:144:38;;;;;;;;;;;;;;;;;;;58:110;;;:::i;:::-;;;;-1:-1:-1;;;;;;58:110:38;;;;;;;;;;;;;;;114:53;;;;;;;;;;;;;;;;;;58:110;:::o",
+  "source": "pragma solidity ^0.5.12;\n\n\ncontract OnApproveConstant {\n  bytes4 public constant INTERFACE_ID_ON_APPROVE = bytes4(keccak256(\"onApprove(address,address,uint256,bytes)\"));\n}",
+  "sourcePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/tokens/OnApproveConstant.sol",
+  "ast": {
+    "absolutePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/tokens/OnApproveConstant.sol",
+    "exportedSymbols": {
+      "OnApproveConstant": [
+        13738
+      ]
+    },
+    "id": 13739,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13730,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:38"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13738,
+        "linearizedBaseContracts": [
+          13738
+        ],
+        "name": "OnApproveConstant",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 13737,
+            "name": "INTERFACE_ID_ON_APPROVE",
+            "nodeType": "VariableDeclaration",
+            "scope": 13738,
+            "src": "58:110:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 13731,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "58:6:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "arguments": [
+                    {
+                      "argumentTypes": null,
+                      "hexValue": "6f6e417070726f766528616464726573732c616464726573732c75696e743235362c627974657329",
+                      "id": 13734,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "124:42:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_4273ca16e32229270629d776700e1c07e4a1080fc9b26d21f6608efc2b31dc4d",
+                        "typeString": "literal_string \"onApprove(address,address,uint256,bytes)\""
+                      },
+                      "value": "onApprove(address,address,uint256,bytes)"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_stringliteral_4273ca16e32229270629d776700e1c07e4a1080fc9b26d21f6608efc2b31dc4d",
+                        "typeString": "literal_string \"onApprove(address,address,uint256,bytes)\""
+                      }
+                    ],
+                    "id": 13733,
+                    "name": "keccak256",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 23697,
+                    "src": "114:9:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                      "typeString": "function (bytes memory) pure returns (bytes32)"
+                    }
+                  },
+                  "id": 13735,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "114:53:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                ],
+                "id": 13732,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "107:6:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_bytes4_$",
+                  "typeString": "type(bytes4)"
+                },
+                "typeName": "bytes4"
+              },
+              "id": 13736,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "107:61:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 13739,
+        "src": "27:144:38"
+      }
+    ],
+    "src": "0:171:38"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/tokens/OnApproveConstant.sol",
+    "exportedSymbols": {
+      "OnApproveConstant": [
+        13738
+      ]
+    },
+    "id": 13739,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13730,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:38"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13738,
+        "linearizedBaseContracts": [
+          13738
+        ],
+        "name": "OnApproveConstant",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 13737,
+            "name": "INTERFACE_ID_ON_APPROVE",
+            "nodeType": "VariableDeclaration",
+            "scope": 13738,
+            "src": "58:110:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes4",
+              "typeString": "bytes4"
+            },
+            "typeName": {
+              "id": 13731,
+              "name": "bytes4",
+              "nodeType": "ElementaryTypeName",
+              "src": "58:6:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "arguments": [
+                    {
+                      "argumentTypes": null,
+                      "hexValue": "6f6e417070726f766528616464726573732c616464726573732c75696e743235362c627974657329",
+                      "id": 13734,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "string",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "124:42:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_stringliteral_4273ca16e32229270629d776700e1c07e4a1080fc9b26d21f6608efc2b31dc4d",
+                        "typeString": "literal_string \"onApprove(address,address,uint256,bytes)\""
+                      },
+                      "value": "onApprove(address,address,uint256,bytes)"
+                    }
+                  ],
+                  "expression": {
+                    "argumentTypes": [
+                      {
+                        "typeIdentifier": "t_stringliteral_4273ca16e32229270629d776700e1c07e4a1080fc9b26d21f6608efc2b31dc4d",
+                        "typeString": "literal_string \"onApprove(address,address,uint256,bytes)\""
+                      }
+                    ],
+                    "id": 13733,
+                    "name": "keccak256",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 23697,
+                    "src": "114:9:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                      "typeString": "function (bytes memory) pure returns (bytes32)"
+                    }
+                  },
+                  "id": 13735,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "functionCall",
+                  "lValueRequested": false,
+                  "names": [],
+                  "nodeType": "FunctionCall",
+                  "src": "114:53:38",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                ],
+                "id": 13732,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "lValueRequested": false,
+                "nodeType": "ElementaryTypeNameExpression",
+                "src": "107:6:38",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_bytes4_$",
+                  "typeString": "type(bytes4)"
+                },
+                "typeName": "bytes4"
+              },
+              "id": 13736,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "typeConversion",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "107:61:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes4",
+                "typeString": "bytes4"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 13739,
+        "src": "27:144:38"
+      }
+    ],
+    "src": "0:171:38"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-03-24T05:32:30.358Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

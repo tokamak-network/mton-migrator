@@ -1,0 +1,398 @@
+{
+  "contractName": "VaultStorage",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"implementation\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/vault/VaultStorage.sol\":\"VaultStorage\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/pjh/workspace/plasma-evm-contracts/contracts/exec/DelegateExecStorage.sol\":{\"keccak256\":\"0x154c878b5877b88110c017bd7be1f1846a76ce61fee004e5aabd4a95584220bb\",\"urls\":[\"bzz-raw://c8657e08601d75873b2aecad16e4680038a830159891f78d7ba95fb376ac1b73\",\"dweb:/ipfs/QmeREVUTxC6NCpkQGJFs5cWerMKjyzBukb5Yxa8k5W1GJe\"]},\"/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/vault/VaultStorage.sol\":{\"keccak256\":\"0xe14bb00a0b97b34678d7fe64cc9d7b2ef8c7028f5dda9a18a592b15806e369ec\",\"urls\":[\"bzz-raw://748a295266e8a1cf845719a71b2bf499f243040ea823fbda9469b46e03df89d6\",\"dweb:/ipfs/QmWLFSFEwRdeyV32oCSKvfNp9cdKUXrcefk2JwvgHLBXXK\"]},\"/Users/pjh/workspace/plasma-evm-contracts/node_modules/openzeppelin-solidity/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzz-raw://216ef9d6b614db4eb46970b4e84903f2534a45572dd30a79f0041f1a5830f436\",\"dweb:/ipfs/QmNPrJ4MWKUAWzKXpUqeyKRUfosaoANZAqXgvepdrCwZAG\"]},\"/Users/pjh/workspace/plasma-evm-contracts/node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0x6fb9d7889769d7cc161225f9ef7a90e468ba9788b253816f8d8b6894d3472c24\",\"urls\":[\"bzz-raw://cf4c00fc3c37cc5acf0c82ec6fd97bab67d72c2567fdc0ebf023d9c09b30a08e\",\"dweb:/ipfs/Qmb7TChG6DsEDX7LooJ4vmxot19f7VXX8S1zUGPeJTWbwZ\"]}},\"version\":1}",
+  "bytecode": "0x608060405260006100176001600160e01b0361006616565b600080546001600160a01b0319166001600160a01b0383169081178255604051929350917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a35061006a565b3390565b61031d806100796000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80635c60da1b1461005c578063715018a6146100805780638da5cb5b1461008a5780638f32d59b14610092578063f2fde38b146100ae575b600080fd5b6100646100d4565b604080516001600160a01b039092168252519081900360200190f35b6100886100e3565b005b610064610186565b61009a610195565b604080519115158252519081900360200190f35b610088600480360360208110156100c457600080fd5b50356001600160a01b03166101b9565b6001546001600160a01b031681565b6100eb610195565b61013c576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b600080546001600160a01b03166101aa61021e565b6001600160a01b031614905090565b6101c1610195565b610212576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b61021b81610222565b50565b3390565b6001600160a01b0381166102675760405162461bcd60e51b81526004018080602001828103825260268152602001806102c36026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b039290921691909117905556fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a72315820e552737ab7917e2f5d2517e10e86c72dbaa00ddf17079bca41bb2d22111685d264736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80635c60da1b1461005c578063715018a6146100805780638da5cb5b1461008a5780638f32d59b14610092578063f2fde38b146100ae575b600080fd5b6100646100d4565b604080516001600160a01b039092168252519081900360200190f35b6100886100e3565b005b610064610186565b61009a610195565b604080519115158252519081900360200190f35b610088600480360360208110156100c457600080fd5b50356001600160a01b03166101b9565b6001546001600160a01b031681565b6100eb610195565b61013c576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b600080546001600160a01b03166101aa61021e565b6001600160a01b031614905090565b6101c1610195565b610212576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b61021b81610222565b50565b3390565b6001600160a01b0381166102675760405162461bcd60e51b81526004018080602001828103825260268152602001806102c36026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b039290921691909117905556fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a265627a7a72315820e552737ab7917e2f5d2517e10e86c72dbaa00ddf17079bca41bb2d22111685d264736f6c634300050c0032",
+  "sourceMap": "102:92:46:-;;;698:17:59;718:12;-1:-1:-1;;;;;718:10:59;:12;:::i;:::-;740:6;:18;;-1:-1:-1;;;;;;740:18:59;-1:-1:-1;;;;;740:18:59;;;;;;;773:43;;740:18;;-1:-1:-1;740:18:59;773:43;;740:6;;773:43;664:159;102:92:46;;788:96:49;867:10;788:96;:::o;102:92:46:-;;;;;;;",
+  "deployedSourceMap": "102:92:46:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;102:92:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;172:37:9;;;:::i;:::-;;;;-1:-1:-1;;;;;172:37:9;;;;;;;;;;;;;;1684:137:59;;;:::i;:::-;;899:77;;;:::i;1250:92::-;;;:::i;:::-;;;;;;;;;;;;;;;;;;1970:107;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1970:107:59;-1:-1:-1;;;;;1970:107:59;;:::i;172:37:9:-;;;-1:-1:-1;;;;;172:37:9;;:::o;1684:137:59:-;1103:9;:7;:9::i;:::-;1095:54;;;;;-1:-1:-1;;;1095:54:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1782:1;1766:6;;1745:40;;-1:-1:-1;;;;;1766:6:59;;;;1745:40;;1782:1;;1745:40;1812:1;1795:19;;-1:-1:-1;;;;;;1795:19:59;;;1684:137::o;899:77::-;937:7;963:6;-1:-1:-1;;;;;963:6:59;899:77;:::o;1250:92::-;1290:4;1329:6;;-1:-1:-1;;;;;1329:6:59;1313:12;:10;:12::i;:::-;-1:-1:-1;;;;;1313:22:59;;1306:29;;1250:92;:::o;1970:107::-;1103:9;:7;:9::i;:::-;1095:54;;;;;-1:-1:-1;;;1095:54:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2042:28;2061:8;2042:18;:28::i;:::-;1970:107;:::o;788:96:49:-;867:10;788:96;:::o;2178:225:59:-;-1:-1:-1;;;;;2251:22:59;;2243:73;;;;-1:-1:-1;;;2243:73:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2352:6;;;2331:38;;-1:-1:-1;;;;;2331:38:59;;;;2352:6;;;2331:38;;;2379:6;:17;;-1:-1:-1;;;;;;2379:17:59;-1:-1:-1;;;;;2379:17:59;;;;;;;;;;2178:225::o",
+  "source": "pragma solidity ^0.5.12;\n\nimport { DelegateExecStorage } from  \"../../exec/DelegateExecStorage.sol\";\n\ncontract VaultStorage is DelegateExecStorage {\n  // some storages...\n\n  bytes32[1000] buf;\n}",
+  "sourcePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/vault/VaultStorage.sol",
+  "ast": {
+    "absolutePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/vault/VaultStorage.sol",
+    "exportedSymbols": {
+      "VaultStorage": [
+        14383
+      ]
+    },
+    "id": 14384,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 14374,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:46"
+      },
+      {
+        "absolutePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/exec/DelegateExecStorage.sol",
+        "file": "../../exec/DelegateExecStorage.sol",
+        "id": 14376,
+        "nodeType": "ImportDirective",
+        "scope": 14384,
+        "sourceUnit": 3240,
+        "src": "26:74:46",
+        "symbolAliases": [
+          {
+            "foreign": 14375,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 14377,
+              "name": "DelegateExecStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3239,
+              "src": "127:19:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_DelegateExecStorage_$3239",
+                "typeString": "contract DelegateExecStorage"
+              }
+            },
+            "id": 14378,
+            "nodeType": "InheritanceSpecifier",
+            "src": "127:19:46"
+          }
+        ],
+        "contractDependencies": [
+          3239,
+          19972,
+          21006
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 14383,
+        "linearizedBaseContracts": [
+          14383,
+          3239,
+          21006,
+          19972
+        ],
+        "name": "VaultStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 14382,
+            "name": "buf",
+            "nodeType": "VariableDeclaration",
+            "scope": 14383,
+            "src": "174:17:46",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_bytes32_$1000_storage",
+              "typeString": "bytes32[1000]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 14379,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "174:7:46",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "id": 14381,
+              "length": {
+                "argumentTypes": null,
+                "hexValue": "31303030",
+                "id": 14380,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "182:4:46",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1000_by_1",
+                  "typeString": "int_const 1000"
+                },
+                "value": "1000"
+              },
+              "nodeType": "ArrayTypeName",
+              "src": "174:13:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_bytes32_$1000_storage_ptr",
+                "typeString": "bytes32[1000]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 14384,
+        "src": "102:92:46"
+      }
+    ],
+    "src": "0:194:46"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/stake/vault/VaultStorage.sol",
+    "exportedSymbols": {
+      "VaultStorage": [
+        14383
+      ]
+    },
+    "id": 14384,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 14374,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:46"
+      },
+      {
+        "absolutePath": "/Users/pjh/workspace/plasma-evm-contracts/contracts/exec/DelegateExecStorage.sol",
+        "file": "../../exec/DelegateExecStorage.sol",
+        "id": 14376,
+        "nodeType": "ImportDirective",
+        "scope": 14384,
+        "sourceUnit": 3240,
+        "src": "26:74:46",
+        "symbolAliases": [
+          {
+            "foreign": 14375,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 14377,
+              "name": "DelegateExecStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3239,
+              "src": "127:19:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_DelegateExecStorage_$3239",
+                "typeString": "contract DelegateExecStorage"
+              }
+            },
+            "id": 14378,
+            "nodeType": "InheritanceSpecifier",
+            "src": "127:19:46"
+          }
+        ],
+        "contractDependencies": [
+          3239,
+          19972,
+          21006
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 14383,
+        "linearizedBaseContracts": [
+          14383,
+          3239,
+          21006,
+          19972
+        ],
+        "name": "VaultStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 14382,
+            "name": "buf",
+            "nodeType": "VariableDeclaration",
+            "scope": 14383,
+            "src": "174:17:46",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_bytes32_$1000_storage",
+              "typeString": "bytes32[1000]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 14379,
+                "name": "bytes32",
+                "nodeType": "ElementaryTypeName",
+                "src": "174:7:46",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                }
+              },
+              "id": 14381,
+              "length": {
+                "argumentTypes": null,
+                "hexValue": "31303030",
+                "id": 14380,
+                "isConstant": false,
+                "isLValue": false,
+                "isPure": true,
+                "kind": "number",
+                "lValueRequested": false,
+                "nodeType": "Literal",
+                "src": "182:4:46",
+                "subdenomination": null,
+                "typeDescriptions": {
+                  "typeIdentifier": "t_rational_1000_by_1",
+                  "typeString": "int_const 1000"
+                },
+                "value": "1000"
+              },
+              "nodeType": "ArrayTypeName",
+              "src": "174:13:46",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_bytes32_$1000_storage_ptr",
+                "typeString": "bytes32[1000]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 14384,
+        "src": "102:92:46"
+      }
+    ],
+    "src": "0:194:46"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2020-03-05T06:33:29.850Z",
+  "devdoc": {
+    "methods": {
+      "isOwner()": {
+        "details": "Returns true if the caller is the current owner."
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

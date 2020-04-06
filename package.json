@@ -2,13 +2,21 @@
   "name": "mton-migrator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Onther-Tech/mton-migrator",
   "dependencies": {
+    "@makerdao/currency": "^0.9.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@truffle/contract": "^4.1.15",
+    "@web3-react/core": "^6.0.9",
+    "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-metamask-login-button": "^1.0.18",
+    "react-scripts": "3.4.1",
+    "web3": "^1.2.6",
+    "web3-utils": "^1.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
