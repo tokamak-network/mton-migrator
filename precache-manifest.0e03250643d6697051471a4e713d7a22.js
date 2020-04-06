@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "242fc59cc66b38d3a532b1a8930c8533",
+    "revision": "64631a1e4daecfed1f6c0933c02caad2",
     "url": "/mton-migrator/index.html"
   },
   {
-    "revision": "fbc288b8559ade1b868b",
+    "revision": "964996a5ac47e14ce963",
     "url": "/mton-migrator/static/css/main.fb884c33.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mton-migrator/static/js/2.d8f30dd4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fbc288b8559ade1b868b",
-    "url": "/mton-migrator/static/js/main.f83a4dd5.chunk.js"
+    "revision": "964996a5ac47e14ce963",
+    "url": "/mton-migrator/static/js/main.6e72b0c4.chunk.js"
   },
   {
     "revision": "e76510d8c93f14c8cfcb",
