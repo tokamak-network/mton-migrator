@@ -11,7 +11,8 @@ import {fetchAccounts, fetchNetwork, networkName } from "./services/Web3Service"
 
 import './App.css';
 
-const prefix = "https://etherscan.io/address";
+const addressPrefix = "https://etherscan.io/address";
+const txPrefix = "https://etherscan.io/tx";
 
 const _MTON = createCurrency('MTON');
 
@@ -27,7 +28,15 @@ const addressSelector = (netId) => {
 
 const Address = ({ children }) => {
   return (
-    <a href={`${prefix}/${children}`}>
+    <a href={`${addressPrefix}/${children}`} target="_blank" >
+      {children}
+    </a>
+  )
+};
+
+const Transaction = ({ children }) => {
+  return (
+    <a href={`${txPrefix}/${children}`} target="_blank">
       {children}
     </a>
   )
@@ -174,7 +183,7 @@ class App extends Component {
 
         {
           tx && <p>
-            tx: {tx}
+            tx: <Transaction>{tx}</Transaction>
           </p>
         }
 
