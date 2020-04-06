@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mton-migrator/precache-manifest.6dd399f66bf3c87c85692dc6e4efba7f.js"
+  "/mton-migrator/precache-manifest.8acf917203ba9b334e0b9283a59e63c7.js"
 );
 
 self.addEventListener('message', (event) => {
