@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Onther-Tech/mton-migrator/static/css/main.dc0a14bb.chunk.css",
+    "main.js": "/Onther-Tech/mton-migrator/static/js/main.887a4f9c.chunk.js",
+    "main.js.map": "/Onther-Tech/mton-migrator/static/js/main.887a4f9c.chunk.js.map",
+    "runtime-main.js": "/Onther-Tech/mton-migrator/static/js/runtime-main.e0b947a8.js",
+    "runtime-main.js.map": "/Onther-Tech/mton-migrator/static/js/runtime-main.e0b947a8.js.map",
+    "static/js/2.9265b699.chunk.js": "/Onther-Tech/mton-migrator/static/js/2.9265b699.chunk.js",
+    "static/js/2.9265b699.chunk.js.map": "/Onther-Tech/mton-migrator/static/js/2.9265b699.chunk.js.map",
+    "index.html": "/Onther-Tech/mton-migrator/index.html",
+    "precache-manifest.4d8a062850c6e67158dde7664ebebb9f.js": "/Onther-Tech/mton-migrator/precache-manifest.4d8a062850c6e67158dde7664ebebb9f.js",
+    "service-worker.js": "/Onther-Tech/mton-migrator/service-worker.js",
+    "static/css/main.dc0a14bb.chunk.css.map": "/Onther-Tech/mton-migrator/static/css/main.dc0a14bb.chunk.css.map",
+    "static/js/2.9265b699.chunk.js.LICENSE.txt": "/Onther-Tech/mton-migrator/static/js/2.9265b699.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0b947a8.js",
+    "static/js/2.9265b699.chunk.js",
+    "static/css/main.dc0a14bb.chunk.css",
+    "static/js/main.887a4f9c.chunk.js"
+  ]
+}
