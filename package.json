@@ -16,7 +16,7 @@
     "react-metamask-login-button": "^1.0.18",
     "react-scripts": "3.4.1",
     "web3": "^1.2.6",
-    "web3-utils": "^1.2.6"
+    "web3-utils": "^4.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
